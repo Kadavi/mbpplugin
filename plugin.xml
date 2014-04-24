@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="org.schoolsfirstfcu.mobile.plugin.camera"
+    version="0.0.1">
+
+    <name>MbpCamera</name>
+
+    <asset src="www/js/mbpcamera.js" target="mbpcamera.js" />
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/cordova/plugins">
+            <plugin name="Camera"
+                value="org.schoolsfirstfcu.mobile.plugin.Camera"/>
+        </config-file>
+       
+        <source-file src="src/android/Camera.java"
+                target-dir="src/org/schoolsfirstfcu/mobile/plugin" />
+        <source-file src="src/android/CameraActivity.java"
+                target-dir="src/org/schoolsfirstfcu/mobile/plugin" />
+        <source-file src="src/android/CameraPreview.java"
+                target-dir="src/org/schoolsfirstfcu/mobile/plugin" />
+    </platform>
+</plugin>
