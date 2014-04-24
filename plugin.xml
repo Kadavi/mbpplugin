@@ -10,11 +10,6 @@
 
     <!-- android -->
     <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/cordova/plugins">
-            <plugin name="Camera"
-                value="org.schoolsfirstfcu.mobile.plugin.Camera"/>
-        </config-file>
-       
         <source-file src="src/android/Camera.java"
                 target-dir="src/org/schoolsfirstfcu/mobile/plugin" />
         <source-file src="src/android/CameraActivity.java"
